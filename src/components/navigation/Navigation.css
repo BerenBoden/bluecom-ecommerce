@@ -1,0 +1,45 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.navigation img {
+    padding-top: 6px;
+    width:  160px;
+    object-fit: cover;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation li {
+    padding: 0 20px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    border-radius: 4px;
+    margin: 5px;
+    height: 5px;
+    width: 35px;
+    background-color: black;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+@media only screen and (max-width: 820px){
+    .navigation ul {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
